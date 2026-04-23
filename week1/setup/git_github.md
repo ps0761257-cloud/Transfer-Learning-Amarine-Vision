@@ -218,7 +218,7 @@ Alasan:
 * memastikan menggunakan versi terbaru dari owner
 * menjaga sinkronisasi antara local, upstream, dan origin
 
-Penting diingat : 
+Penting diingat! <br>
 saat menekan perintah : 
 ```bash
 git status
@@ -229,6 +229,8 @@ Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 ```
+Agar tidak terjadi confilct <br>
+Kalau misal ada output selain hal tersbeut boleh tanya ke aku
 ---
 
 ## 3.6 Buat Branch Baru
