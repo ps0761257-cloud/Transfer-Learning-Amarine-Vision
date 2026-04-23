@@ -218,16 +218,6 @@ Alasan:
 * memastikan menggunakan versi terbaru dari owner
 * menjaga sinkronisasi antara local, upstream, dan origin
 
-Penting diingat! <br>
-saat menekan perintah : 
-```bash
-git status
-```
-outputnya : 
-```bash
-nothing to commit, working tree clean
-```
-Agar tidak terjadi confilct
 ---
 
 ## 3.6 Buat Branch Baru
