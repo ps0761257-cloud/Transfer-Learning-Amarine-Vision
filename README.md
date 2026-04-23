@@ -1,35 +1,35 @@
-# Transfer Learning — Amarine Vision
----
-
-Seluruh materi, tugas, dan dokumentasi dikelola melalui repositori GitHub ini. Pastikan kamu sudah bergabung dan memahami cara menggunakannya sebelum memulai.
-
----
-
-## Daftar Minggu
-
-| Minggu | Topik | Status |
-|--------|-------|--------|
-| Week 1 | Anaconda Environment Setup dan Dasar GitHub | Aktif |
-| Week 2 | Dasar-Dasar Python untuk Computer Vision | Akan Datang |
----
-
 ## Week 1 — Anaconda Environment Setup dan Dasar GitHub
+
+---
 
 ### Deskripsi
 
-Minggu pertama ini berfokus pada persiapan. Sebelum bisa menulis satu baris pun kode machine learning, kamu perlu memiliki lingkungan kerja yang rapi dan terkontrol. Di sinilah peran Anaconda dan Git menjadi sangat penting.
+Di minggu pertama ini fokusnya bukan langsung coding, tapi **setup pondasi dulu**.
+
+Kenapa penting?  
+Karena kalau environment berantakan dari awal:
+
+- library bisa bentrok  
+- error susah dilacak  
+- project jadi tidak stabil  
+
+Makanya di sini akan setup:
+
+- environment pakai Anaconda  
+- workflow Git & GitHub yang benar  
+
 ---
 
 ### Tujuan Pembelajaran
 
-Setelah menyelesaikan materi week 1, kamu diharapkan mampu:
+Setelah menyelesaikan week 1, diharapkan sudah bisa:
 
-- Menginstal dan mengonfigurasi Anaconda di sistem operasi masing-masing
-- Membuat dan mengelola virtual environment Python menggunakan Conda
-- Menginstal library Python yang dibutuhkan seperti numpy dan opencv-python
-- Memahami konsep dasar version control menggunakan Git
-- Melakukan operasi Git fundamental: `init`, `add`, `commit`, `push`, dan `pull`
-- Menghubungkan repository lokal ke GitHub
+- Install dan setup Anaconda dengan benar  
+- Membuat dan mengelola virtual environment pakai Conda  
+- Install library Python seperti `numpy` dan `opencv-python`  
+- Paham konsep dasar Git (version control)  
+- Menggunakan perintah Git dasar: `init`, `add`, `commit`, `push`, `pull`  
+- Menghubungkan project ke GitHub  
 
 ---
 
@@ -37,27 +37,53 @@ Setelah menyelesaikan materi week 1, kamu diharapkan mampu:
 
 #### 1. Anaconda dan Virtual Environment
 
-Virtual environment adalah cara untuk membuat "ruang kerja" Python yang terpisah untuk setiap proyek. Bayangkan seperti memiliki laptop berbeda untuk setiap tugas — tidak ada library yang saling tabrakan.
+Virtual environment itu ibarat **ruang kerja terpisah untuk tiap project**.  
+Jadi setiap project punya library sendiri dan tidak saling ganggu.
 
-- Instalasi Anaconda
-- Perintah dasar Conda: `create`, `activate`, `deactivate`, `install`, `list`
-- Manajemen environment untuk proyek yang terisolasi
-- Export dan import environment menggunakan `environment.yml`
+Kenapa ini penting:
 
-Panduan lengkap instalasi Anaconda tersedia di: [week1/setup/anacond_setup.md](week1/setup/anacond_setup.md)
+- tidak ada konflik library  
+- project lebih rapi  
+- gampang di-maintain  
+
+Yang akan dipelajari:
+
+- Cara install Anaconda / Miniconda  
+- Perintah dasar Conda: `create`, `activate`, `deactivate`, `install`, `list`  
+- Cara manage environment biar tidak tabrakan  
+- Export & import environment (`environment.yml`)  
+
+Panduan lengkap ada di:  
+[week1/setup/anaconda_setup.md](week1/setup/anaconda_setup.md)
 
 ---
 
 #### 2. Git dan GitHub
 
-Git adalah sistem untuk melacak perubahan kode. GitHub adalah tempat menyimpan kode tersebut secara online. Keduanya adalah standar industri yang digunakan di perusahaan teknologi seluruh dunia.
+Git dipakai untuk **melacak semua perubahan code**,  
+GitHub dipakai untuk **menyimpan dan kolaborasi**.
 
-- Konsep dasar version control
-- Konfigurasi awal Git menggunakan `git config`
-- Alur kerja Git: `init` → `add` → `commit` → `push`
-- Membuat dan mengelola repository di GitHub
-- Perintah `pull`, `clone`, dan `status`
+Di sini juga akan pakai workflow yang benar (pakai upstream, bukan manual sync).
 
-Panduan lengkap penggunaan Git dan GitHub tersedia di: [week1/setup/git_github.md](week1/setup/git_github.md)
+Yang akan dipelajari:
+
+- Konsep dasar version control  
+- Setup awal Git (`git config`)  
+- Alur kerja Git: `init → add → commit → push`  
+- Cara bikin dan kelola repository di GitHub  
+- Perintah penting: `pull`, `clone`, `status`  
+
+Panduan lengkap ada di:  
+[week1/setup/git_github.md](week1/setup/git_github.md)
 
 ---
+#### Struktur Repositries
+```
+week1-amarine/
+├── README.md                      # Dokumentasi utama + opening ramah
+├── setup/
+│   ├── anaconda_setup.md          # Instalasi & perintah Conda step-by-step
+│   └── git_github.md              # Workflow Git: init → add → commit → push
+└── assignment/                    # Pengumpulan tugas
+    └── nama                       # Untuk Pengumpulan tugas sesuaikan dengan nama (harus buat folde dengan diberikan nama pribadi)
+```
