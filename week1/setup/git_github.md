@@ -218,6 +218,17 @@ Alasan:
 * memastikan menggunakan versi terbaru dari owner
 * menjaga sinkronisasi antara local, upstream, dan origin
 
+Penting diingat : 
+saat menekan perintah : 
+```bash
+git status
+```
+wajib outputnya : 
+```bash
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
 ---
 
 ## 3.6 Buat Branch Baru
